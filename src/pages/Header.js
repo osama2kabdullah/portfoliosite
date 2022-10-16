@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const linksStyle = 'text-primary hover:text-4xl lg:text-5xl text-3xl';
   return (
     <nav className="flex justify-between lg:p-12 p-6">
-      <p className="font-primary lg:text-2xl text-xl">
+      <p className="font-primary lg:text-2xl text-md">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -24,7 +25,7 @@ const Header = () => {
       </p>
       <p>
         <svg
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen(true)}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -46,7 +47,7 @@ const Header = () => {
       >
         <p className="fixed lg:right-12 right-6 lg:top-12 top-6">
           <svg
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen(false)}
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -61,12 +62,11 @@ const Header = () => {
             />
           </svg>
         </p>
-        <Link className="text-primary hover:text-4xl lg:text-5xl text-3xl">About</Link>
-        <Link className="text-primary hover:text-4xl lg:text-5xl text-3xl">Works</Link>
-        <Link className="text-primary hover:text-4xl lg:text-5xl text-3xl">Contact</Link>
+        <Link onClick={()=>setOpen(false)} to='/' className={linksStyle}>About</Link>
+        <Link onClick={()=>setOpen(false)} className={linksStyle}>Works</Link>
+        <Link onClick={()=>setOpen(false)} className={linksStyle}>Contact</Link>
       </div>
     </nav>
   );
 };
-
 export default Header;

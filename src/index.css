@@ -1,5 +1,8 @@
 /* style font - 1 */
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* title font */
+@import url('https://fonts.googleapis.com/css2?family=Antic&family=Kanit&display=swap');
+/* tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

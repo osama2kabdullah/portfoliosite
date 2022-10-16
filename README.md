@@ -1,2 +1,2 @@
-background color - #9ACD32
+background color - #F8F8FF
 text color - 	#FFF8DC
