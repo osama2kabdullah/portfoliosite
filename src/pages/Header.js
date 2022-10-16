@@ -63,8 +63,8 @@ const Header = () => {
           </svg>
         </p>
         <Link onClick={()=>setOpen(false)} to='/' className={linksStyle}>About</Link>
-        <Link onClick={()=>setOpen(false)} className={linksStyle}>Works</Link>
-        <Link onClick={()=>setOpen(false)} className={linksStyle}>Contact</Link>
+        <Link onClick={()=>setOpen(false)} to='/works' className={linksStyle}>Works</Link>
+        <Link onClick={()=>setOpen(false)} to='/contact' className={linksStyle}>Contact</Link>
       </div>
     </nav>
   );

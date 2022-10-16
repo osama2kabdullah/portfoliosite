@@ -4,3 +4,7 @@
 .text-title {
   font-family: 'Antic', sans-serif;
 }
+form input, textarea {
+  border: 1px solid #ddd;
+  outline: none;
+}
