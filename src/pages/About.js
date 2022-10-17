@@ -1,5 +1,4 @@
 import React from "react";
-import profileImage from "../images/profileImage.jpg";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import HelmetMe from "./shared/HelmetMe";
@@ -27,7 +26,7 @@ const About = () => {
         </a>
       </p>
       <div className="h-[12em] w-[12em] rounded-full overflow-hidden">
-        <img src={profileImage} alt="" />
+        <img src='https://i.ibb.co/y5Mh6XM/images-5.jpg' alt="" />
       </div>
       
           
