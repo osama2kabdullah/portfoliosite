@@ -1,10 +1,11 @@
 import React from 'react';
 
-const ProjectLink = ({children, d }) => {
+const ProjectLink = ({children, d, to }) => {
     const buttonStyle =
-    "px-3 rounded-full border-2 border-black hover:bg-black hover:text-white";
+    "px-3 rounded-full cursor-pointer border-2 border-black hover:bg-black hover:text-white";
     return (
-        <button className={buttonStyle}>
+        <a target="_blank"
+        rel="noreferrer" href={to} className={buttonStyle}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -20,7 +21,7 @@ const ProjectLink = ({children, d }) => {
                 />
               </svg>
               {children}
-            </button>
+            </a>
     );
 };
 
