@@ -6,14 +6,14 @@ import { SiJavascript, SiReact, SiNodedotjs, SiExpress, SiMongodb, SiHtml5, SiTa
 
 const Projects = () => {
   return (
-    <div className="p-5 lg:w-3/5 w-5/5 mx-auto ">
+    <div className="p-5 lg:w-3/5 w-11/12 mx-auto ">
       <div>
         <img src={jerp} alt="" />
         <Link to='/detail/jerp' className="lg:text-2xl text-lg cursor-pointer hover:text-gray-300 underline font-bold font-primary">
           Jerp -{" "}
           <span className="italic text-title">A manufacturer company website</span>
         </Link>
-        <div className="flex border-b-2 pb-2 border-red gap-3">
+        <div className="flex flex-wrap border-b-2 pb-2 border-red gap-3">
           <span className="text-3xl text-orange-500 bg-white"> <SiHtml5/></span>
           <span className="text-3xl text-blue-500 bg-white"> <SiCss3/></span>
           <span className="text-3xl text-sky-700 bg-white"> <SiTailwindcss/></span>
