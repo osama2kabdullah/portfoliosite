@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const linksStyle = 'text-primary hover:text-4xl lg:text-5xl text-3xl';
+  const linksStyle = "text-primary hover:text-4xl lg:text-5xl text-3xl";
   return (
     <nav className="flex justify-between lg:p-12 p-6">
       <p className="font-primary lg:text-2xl text-md">
@@ -31,7 +31,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="lg:w-12 cursor-pointer w-8 lg:h-12 h-8"
+          className="lg:w-12 cursor-pointer  w-8 lg:h-12 h-8"
         >
           <path
             strokeLinecap="round"
@@ -53,7 +53,7 @@ const Header = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="lg:w-12 cursor-pointer w-8 lg:h-12 h-8"
+            className="lg:w-12 text-white cursor-pointer w-8 lg:h-12 h-8"
           >
             <path
               strokeLinecap="round"
@@ -62,9 +62,19 @@ const Header = () => {
             />
           </svg>
         </p>
-        <Link onClick={()=>setOpen(false)} to='/' className={linksStyle}>About</Link>
-        <Link onClick={()=>setOpen(false)} to='/works' className={linksStyle}>Works</Link>
-        <Link onClick={()=>setOpen(false)} to='/contact' className={linksStyle}>Contact</Link>
+        <Link onClick={() => setOpen(false)} to="/" className={linksStyle}>
+          About
+        </Link>
+        <Link onClick={() => setOpen(false)} to="/works" className={linksStyle}>
+          Works
+        </Link>
+        <Link
+          onClick={() => setOpen(false)}
+          to="/contact"
+          className={linksStyle}
+        >
+          Contact
+        </Link>
       </div>
     </nav>
   );

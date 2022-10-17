@@ -26,6 +26,7 @@ const Work = () => {
         <div className="bg-[#ddd] h-[1px]"></div>
       </div>
       <div className="grid gap-12">
+      
       <Projects></Projects>
       <Projects></Projects>
       <Projects></Projects>
