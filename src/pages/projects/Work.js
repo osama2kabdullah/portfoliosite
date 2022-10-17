@@ -1,9 +1,11 @@
 import React from "react";
+import HelmetMe from "../shared/HelmetMe";
 import Projects from "./Projects";
 
 const Work = () => {
   return (
     <section>
+      <HelmetMe>Works</HelmetMe>
       <div
         style={{ gridTemplateColumns: "repeat(3, 1fr)", alignItems: "center" }}
         className="grid"

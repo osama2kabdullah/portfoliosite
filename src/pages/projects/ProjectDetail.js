@@ -2,12 +2,14 @@ import React from "react";
 import FeedBack from "./FeedBack";
 import ProjectLink from "./ProjectLink";
 import jerp from "../../images/jerp.png";
+import HelmetMe from "../shared/HelmetMe";
 
 const ProjectDetail = () => {
   const pHeadStyle = "font-bold underline";
   const ptextStyle = "lg:text-xl text-lg lg:leading-10 leading-7";
   return (
     <div className="lg:w-4/6 mx-auto w-11/12">
+      <HelmetMe>Work Detail</HelmetMe>
       <p className="lg:text-5xl text-3xl font-bold font-primary">
           Jerp -{" "}
           <span className="italic text-title text-2xl">A manufacturer company website</span>

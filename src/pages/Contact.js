@@ -1,9 +1,11 @@
 import React from "react";
+import HelmetMe from "./shared/HelmetMe";
 
 const Contact = () => {
   const inputStyle = "lg:p-3 p-2 lg:text-xl text-md rounded-lg";
   return (
     <div>
+      <HelmetMe>Contact</HelmetMe>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

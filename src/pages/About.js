@@ -2,12 +2,14 @@ import React from "react";
 import profileImage from "../images/profileImage.jpg";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import HelmetMe from "./shared/HelmetMe";
 
 const About = () => {
   const buttonStyle =
     "px-3 rounded-full cursor-pointer border-2 border-black hover:bg-black hover:text-white";
   return (
     <section className="text-center flex flex-col ga-3 justify-center items-center h-[80vh]">
+      <HelmetMe>About</HelmetMe>
       <h3 className="text-title text-center lg:text-5xl lg:px-5 px-2 text-3xl">
         Write code for develop web applications{" "}
       </h3>
