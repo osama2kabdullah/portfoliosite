@@ -1,13 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import jerp from "../../images/jerp.png";
-import HashTag from "./HashTag";
 import ProjectLink from "./ProjectLink";
 import { SiJavascript, SiReact, SiNodedotjs, SiExpress, SiMongodb, SiHtml5, SiTailwindcss, SiCss3,  } from "react-icons/si";
 
 const Projects = () => {
-  const buttonStyle =
-    "px-3 rounded-full border-2 border-black hover:bg-black hover:text-white";
   return (
     <div className="p-5 lg:w-3/5 w-5/5 mx-auto ">
       <div>

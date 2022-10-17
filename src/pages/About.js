@@ -1,6 +1,5 @@
 import React from "react";
 import profileImage from "../images/profileImage.jpg";
-import Hyperlink from "./shared/Hyperlink";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 

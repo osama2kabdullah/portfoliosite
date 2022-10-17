@@ -1,2 +1,1 @@
-background color - #F8F8FF
-text color - 	#FFF8DC
+# My portfolio website - [visit website](https://www.google.com)

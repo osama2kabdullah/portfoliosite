@@ -7,8 +7,8 @@ const Resume = () => {
         <p className="c23 c35">
           <span className="c11 c33"></span>
         </p>
-        <a id="t.37c17e49732937cc15d7a624674ffc643d4efb18"></a>
-        <a id="t.0"></a>
+        {/* <a id="t.37c17e49732937cc15d7a624674ffc643d4efb18"></a>
+        <a id="t.0"></a> */}
         <table className="c31">
           <tr className="c30">
             <td className="c34" colspan="1" rowspan="1">
