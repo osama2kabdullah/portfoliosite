@@ -3,7 +3,7 @@ import React from "react";
 import HelmetMe from "./shared/HelmetMe";
 
 const Contact = () => {
-  const inputStyle = "lg:p-3 p-2 lg:text-xl text-md rounded-lg";
+  const inputStyle = "lg:p-3 p-2 lg:text-xl dark:text-dark-text dark:bg-slate-600 text-md rounded-lg";
   
   const sendMessage = e => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const Contact = () => {
   }
   
   return (
-    <div>
+    <div className="dark:bg-dark-bg bg-light-bg">
       <HelmetMe>Contact</HelmetMe>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const Contact = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="lg:w-32 w-16 mx-auto lg:h-32 mb-12 h-16"
+        className="lg:w-32 w-16 mx-auto dark:text-dark-text text-light-text lg:h-32 mb-12 h-16"
       >
         <path
           strokeLinecap="round"
@@ -38,7 +38,7 @@ const Contact = () => {
       <form onSubmit={sendMessage} className="grid lg:gap-12 gap-5 lg:w-3/6 w-5/6 mx-auto pb-12">
         <div className="grid lg:grid-cols-2 lg:gap-12 gap-5">
           <div className="grid">
-            <label htmlFor="name" className="text-xl mb-3">
+            <label htmlFor="name" className="text-xl dark:text-dark-text text-light-text mb-3">
               Name
             </label>
             <input
@@ -50,7 +50,7 @@ const Contact = () => {
             />
           </div>
           <div className="grid">
-            <label htmlFor="email" className="text-xl mb-3">
+            <label htmlFor="email" className="text-xl dark:text-dark-text text-light-text mb-3">
               Email
             </label>
             <input
@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="grid">
-          <label htmlFor="message" className="text-xl mb-3">
+          <label htmlFor="message" className="text-xl dark:text-dark-text text-light-text mb-3">
             Message
           </label>
           <textarea
@@ -76,7 +76,8 @@ const Contact = () => {
         <input
           type="submit"
           value="Send"
-          className="w-fit px-16 mx-auto rounded-full hover:bg-black hover:text-white cursor-pointer text-xl py-3"
+          className="w-fit lg:px-16 px-8 rounded-full dark:border-dark-text dark:bg-black border-black dark:hover:bg-light-bg dark:text-dark-text dark:hover:text-black hover:text-white hover:bg-black cursor-pointer lg:text-xl text-lg py-3 mx-auto"
+          
         />
       </form>
     </div>

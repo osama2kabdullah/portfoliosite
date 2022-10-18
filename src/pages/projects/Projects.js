@@ -6,23 +6,23 @@ import { SiJavascript, SiReact, SiNodedotjs, SiExpress, SiMongodb, SiHtml5, SiTa
 
 const Projects = () => {
   return (
-    <div className="p-5 lg:w-3/5 w-11/12 mx-auto ">
+    <div className="p-5 dark:bg-dark-bg bg-light-bg lg:w-3/5 w-11/12 mx-auto ">
       <div>
         <img src={jerp} alt="" />
-        <Link to='/detail/jerp' className="lg:text-2xl text-lg cursor-pointer hover:text-gray-300 underline font-bold font-primary">
+        <Link to='/detail/jerp' className="lg:text-2xl text-lg cursor-pointer text-light-text dark:text-dark-text dark:hover:text-light-text hover:text-dark-text underline font-bold font-primary">
           Jerp -{" "}
           <span className="italic text-title">A manufacturer company website</span>
         </Link>
-        <div className="flex flex-wrap border-b-2 pb-2 border-red gap-3">
+        <div className="flex flex-wrap border-b-2 pb-2 border-red-400 gap-3">
           <span className="text-3xl text-orange-500 bg-white"> <SiHtml5/></span>
           <span className="text-3xl text-blue-500 bg-white"> <SiCss3/></span>
           <span className="text-3xl text-sky-700 bg-white"> <SiTailwindcss/></span>
           <span className="text-3xl text-yellow-500 bg-black"> <SiJavascript/></span>
-          <span className="text-3xl text-sky-500"><SiReact/></span>
-          <span className="text-3xl text-green-900"><SiNodedotjs/></span>
-          <span className="text-3xl text-black"><SiExpress/></span>
-          <span>NoSQL</span>
-          <span className="text-3xl text-green-500"><SiMongodb/></span>
+          <span className="text-3xl text-sky-500 bg-white"><SiReact/></span>
+          <span className="text-3xl text-green-900 bg-white"><SiNodedotjs/></span>
+          <span className="text-3xl text-black bg-white"><SiExpress/></span>
+          <span className="bg-white">NoSQL</span>
+          <span className="text-3xl bg-white text-green-500"><SiMongodb/></span>
           
         </div>
 

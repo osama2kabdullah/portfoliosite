@@ -9,13 +9,17 @@ const ProjectDetail = () => {
   const pHeadStyle = "font-bold underline";
   const {name} = useParams();
   const ptextStyle = "lg:text-xl text-lg lg:leading-10 leading-7";
+  const text_style = `${ptextStyle} dark:text-dark-text text-light-text`;
+  //
+  
   const fitures = ['Login and signup system with with firebase', 'Admin/User authorization system with JWT token', 'Admin can add new product, Update product, Delete product, Make user admin, block any user but Cannot block another admin.', 'The user dosent authorized like an admin. User can order product then pay that and can cancel order only before pay.', 'Admin can manage orders what paid and unpaid.', 'User cannot buy under the limitation of product buy limit and cannot buy over the availbale products and also cannot buy stock out products. It contros by tarnary operator.', 'User can reset password if frogotted.', 'User and Admin both are edit there profile, such as - add avatar, home address etc essential info.', 'User can add a review but admin cannot this and admin cannot also buy any product.', `CRUD operation api's`, 'applieng authorization system with JWT token', 'Admin verifaction system'];
   const technology = ['React 18.2.0 - Frontend library', 'firebase 9.11.0 - authentication', 'Node.js 16.16.0 - backend', 'Talwind 3.1.8 - design', 'stripe 1.39.0 - payment intigration', 'daisyUI 2.31.0 & flowbite 1.5.3 - design component', 'react hook form 7.37.0 - form management', 'react firebase hooks 5.0.3 - firebase authentication simpliefied', 'react helmet 6.1.0 - dynamic page title', 'react query 3.39.2 - call api for load data from database', 'react router dom 6.4.2 - for routing page to page without reload', 'Node.js 16.16.0', 'MongoDB 4.10.0 - database', 'cors 2.8.5 - to access api from others', 'dotenv 16.0.3 - for secure some keys', 'express.js 4.18.1 - Node framwork', 'Jsonwebtoken 5.5.1 - applied authorization system']
   
   return (
-    <div className="lg:w-4/6 mx-auto w-11/12">
+    <section className="dark:bg-dark-bg bg-light-bg">
+      <div className="lg:w-4/6 dark:bg-dark-bg bg-light-bg mx-auto w-11/12">
       <HelmetMe>{`${name} project`}</HelmetMe>
-      <p className="lg:text-5xl text-3xl font-bold font-primary">
+      <p className="lg:text-5xl text-3xl dark:text-dark-text font-bold font-primary">
           Jerp -{" "}
           <span className="italic text-title text-2xl">A manufacturer company website</span>
         </p>
@@ -33,55 +37,55 @@ const ProjectDetail = () => {
       </div>
 
       <img src={jerp} alt="" />
-      <p className="mt-2  border-b-2 py-2 text-end">
+      <p className="mt-2 dark:text-dark-text border-gray-300 dark:border-light-text border-b-2 py-2 text-end">
         2 Aug, 2022 - 3 Sep, 2022
       </p>
       <div className="">
-        <p className={ptextStyle}>
+        <p className={text_style}>
           <span className={pHeadStyle}>Description:</span> A manufacturer company website. they sales huge number of products at a time. The website not a indivitual shopping platform. this a dealer type site. Admin and User contribution type site.
         </p>
-        <p className={ptextStyle}>
+        <p className={text_style}>
           <span className={pHeadStyle}>Features: </span>
           <ul className="ptextStyle pl-8 list-decimal">
             {
-              fitures.map((fiture, index)=><li key={index} className={ptextStyle}>{fiture}</li>)
+              fitures.map((fiture, index)=><li key={index} className={text_style}>{fiture}</li>)
             }
           </ul>
         </p>
-        <p className={ptextStyle}>
+        <p className={text_style}>
           <span className={pHeadStyle}>Technologhies and Pakages: </span>
           <ul className="ptextStyle pl-8 list-decimal">
             {
-              technology.map((techno, index)=><li key={index} className={ptextStyle}>{techno}</li>)
+              technology.map((techno, index)=><li key={index} className={text_style}>{techno}</li>)
             }
           </ul>
         </p>
-        <p className={ptextStyle}>
+        <p className={text_style}>
           <span className={pHeadStyle}>Usage guid:</span> Lorem ipsum dolor sit
           amet consectetur, adipisicing elit. Ut vero praesentium consequuntur
           earum quis blanditiis necessitatibus error asperiores adipisci
           corrupti? Ut earum culpa quae eius corporis. Eaque non possimus
           laudantium.
         </p>
-        <p className={ptextStyle}>
+        <p className={text_style}>
           <span className={pHeadStyle}>Bugs/Issue: </span>
           <ul className="ptextStyle pl-8 list-decimal">
-            <li className={ptextStyle}>
+            <li className={text_style}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio, unde?
             </li>
-            <li className={ptextStyle}>
+            <li className={text_style}>
               Sequi incidunt voluptas ab, cupiditate provident labore odio
               veniam hic.
             </li>
-            <li className={ptextStyle}>
+            <li className={text_style}>
               Eligendi sint optio iusto enim vero ipsa, nam fugit quae!
             </li>
-            <li className={ptextStyle}>
+            <li className={text_style}>
               Beatae dicta aperiam a voluptas assumenda, pariatur suscipit. Eos,
               iste.
             </li>
-            <li className={ptextStyle}>
+            <li className={text_style}>
               Quae dolorem laborum odio obcaecati dicta ex natus in provident.
             </li>
             To contribute -{" "}
@@ -105,7 +109,8 @@ const ProjectDetail = () => {
         </p>
       </div>
       <FeedBack></FeedBack>
-    </div>
+      </div>
+    </section>
   );
 };
 
