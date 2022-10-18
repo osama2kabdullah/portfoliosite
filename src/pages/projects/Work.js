@@ -4,7 +4,7 @@ import Projects from "./Projects";
 
 const Work = () => {
   return (
-    <section className="">
+    <section className="h-screen dark:bg-dark-bg bg-light-bg">
       <HelmetMe>Works</HelmetMe>
       <div
         style={{ gridTemplateColumns: "repeat(3, 1fr)", alignItems: "center" }}

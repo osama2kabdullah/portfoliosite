@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
-import { ThemeContext } from "../App";
 import HelmetMe from "./shared/HelmetMe";
 
 const About = () => {

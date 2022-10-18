@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import Work from './pages/projects/Work';
 import ResumePage from './pages/Resume/ResumePage';
 import ProjectDetail from './pages/projects/ProjectDetail';
-import { createContext, useState } from 'react';
+import { useState } from 'react';
 
 
 function App() {
