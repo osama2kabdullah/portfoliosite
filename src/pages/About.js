@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { ThemeContext } from "../App";
 import HelmetMe from "./shared/HelmetMe";
 
 const About = () => {
   const buttonStyle =
-    "px-3 rounded-full cursor-pointer border-2 border-black hover:bg-black hover:text-white";
+    "px-3 rounded-full cursor-pointer border-2 dark:border-dark-text dark:bg-black border-black dark:hover:bg-light-bg dark:text-dark-text dark:hover:text-black hover:text-white hover:bg-black";
+    
   return (
-    <section className="text-center flex flex-col ga-3 justify-center items-center h-[80vh]">
+    <section className="text-center bg-light-bg dark:bg-dark-bg flex flex-col ga-3 justify-center items-center h-screen">
       <HelmetMe>About</HelmetMe>
-      <h3 className="text-title text-center lg:text-5xl lg:px-5 px-2 text-3xl">
+      <h3 className="text-title dark:text-dark-text text-center lg:text-5xl lg:px-5 px-2 text-3xl">
         Write code for develop web applications{" "}
       </h3>
-      <p className=" lg:w-3/6 mx-auto w-5/6 lg:text-2xl text-xl my-7">
+      <p className=" lg:w-3/6 mx-auto w-5/6 dark:text-dark-text lg:text-2xl text-xl my-7">
         I am Md. Abdullah. A junior developer. I mainly develop client-side web
         applications with react.js.{" "}
         <a
@@ -26,7 +28,7 @@ const About = () => {
         </a>
       </p>
       <div className="h-[12em] w-[12em] rounded-full overflow-hidden">
-        <img src='https://i.ibb.co/y5Mh6XM/images-5.jpg' alt="" />
+        <img src='https://i.ibb.co/Pr7tRw0/profile-Image.jpg' alt="" />
       </div>
       
           

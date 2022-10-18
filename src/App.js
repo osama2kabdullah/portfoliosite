@@ -7,12 +7,17 @@ import Contact from './pages/Contact';
 import Work from './pages/projects/Work';
 import ResumePage from './pages/Resume/ResumePage';
 import ProjectDetail from './pages/projects/ProjectDetail';
+import { createContext, useState } from 'react';
 
 
 function App() {
+  const mode = JSON.parse(localStorage.getItem('darkmode'));
+  const [darkmode, setDarkmode] = useState(mode.darkmode || false);
+  localStorage.setItem('darkmode', JSON.stringify({darkmode}));
+  
   return (
-    <section>
-      <Header></Header>
+    <section className={darkmode && 'dark'}>
+      <Header setDarkmode={setDarkmode} darkmode={darkmode}></Header>
       <Routes>
         <Route path='/' element={<About></About>}></Route>
         <Route path='/works' element={<Work></Work>}></Route>
